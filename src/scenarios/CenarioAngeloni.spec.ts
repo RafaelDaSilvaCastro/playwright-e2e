@@ -29,4 +29,8 @@ test.describe('Testando o site do Angeloni', () => {
     await angeloniPage.preencheTelefoneNewsLatter();
   })
 
+
+  test('Adicionando itens no carrinho', async()=>{
+    await angeloniPage.addCarrinho()
+  })
 });

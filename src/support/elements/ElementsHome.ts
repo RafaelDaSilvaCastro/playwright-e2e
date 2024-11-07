@@ -60,4 +60,10 @@ export default class ElementsHome extends BaseElements {
       'div[class="vtex-button__label flex items-center justify-center h-100 ph6 "]'
     )
   }
+
+  divAddCarrinho(): Locator{
+    return this.page.locator(
+      'div[class="vtex-add-to-cart-button-0-x-buttonDataContainer vtex-add-to-cart-button-0-x-buttonDataContainer--shelf-addtocart--cart flex justify-center"]'
+    )
+  }
 }

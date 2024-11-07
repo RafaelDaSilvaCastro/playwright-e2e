@@ -45,6 +45,9 @@ export default class CadastroPage extends BasePage {
     await this.elementos.inputTermo().press('Enter')
   }  
   
+  async addCarrinho(): Promise<void>{
+    await this.elementos.divAddCarrinho().nth(0).click()
+  }
 //   async enviaNewsLatter(): Promise<void>{
 //     await this.elementos.divEnviarNewsLatter().press('Enter')
 //   }     
