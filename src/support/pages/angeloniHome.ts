@@ -12,9 +12,42 @@ export default class CadastroPage extends BasePage {
     this.elementos = new ElementsHome(page);
   }
 
-  async acessaCafe(): Promise<void> {
+  async abaLazer(): Promise<void> {
     await this.elementos.btnLazer().click();
   }
+
+  async abaLazarViagem(): Promise<void> {
+    await this.elementos.btnViagem().click();
+  }
+
+  async pesquisaCafe(): Promise<void>{
+    await this.elementos.inputPesquisa().fill('café')
+  }
+
+  async clicaNaBusca(): Promise<void>{
+    await this.elementos.btnBuscar().click
+  }
+
+  async preencheNome(): Promise<void>{
+    await this.elementos.inputNomeNewsLatter().fill('Teste 123');
+  }
+
+  async preencheEmailNewsLatter(): Promise<void>{
+    await this.elementos.inputEmailNewslatter().fill('Teste@123');
+  }
+
+  async preencheTelefoneNewsLatter(): Promise<void>{
+    await this.elementos.inputTelefoneNewsLatter().fill('47428145642');
+  }  
+
+  async preEncheTermoNewsLatter(): Promise<void>{
+    await this.elementos.inputTermo().click()
+    await this.elementos.inputTermo().press('Enter')
+  }  
+  
+//   async enviaNewsLatter(): Promise<void>{
+//     await this.elementos.divEnviarNewsLatter().press('Enter')
+//   }     
 
   //   async preencherFormulario(): Promise<void> {
   //     await this.cadastroElements.getBotaoNovoCadastro().click();
