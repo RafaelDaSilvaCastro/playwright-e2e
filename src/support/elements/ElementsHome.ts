@@ -66,4 +66,22 @@ export default class ElementsHome extends BaseElements {
       'div[class="vtex-add-to-cart-button-0-x-buttonDataContainer vtex-add-to-cart-button-0-x-buttonDataContainer--shelf-addtocart--cart flex justify-center"]'
     )
   }
+
+  divNossasLojas(): Locator{
+    return this.page.locator(
+      'div[class="vtex-menu-2-x-styledLinkContent vtex-menu-2-x-styledLinkContent--header-options--top--right--link flex justify-between nowrap"]'
+    )
+  }
+
+  inputNossasLojasSuperMercado(): Locator{
+    return this.page.locator(
+      '#lblSupermercado'
+    )
+  }
+
+  comboNossasLojas(): Locator{
+    return this.page.locator(
+      '#comboCidade'
+    )
+  }
 }

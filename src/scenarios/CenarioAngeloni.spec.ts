@@ -33,4 +33,10 @@ test.describe('Testando o site do Angeloni', () => {
   test('Adicionando itens no carrinho', async()=>{
     await angeloniPage.addCarrinho()
   })
+
+  test('Buscando lojas', async()=>{
+    await angeloniPage.abaNossasLojas();
+    await angeloniPage.selecionaSupermercado();
+    await angeloniPage.comboLojaCriciuma();
+  })
 });
